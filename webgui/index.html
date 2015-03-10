@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <head>
+    <title>Thinking Juice ChristmasPi Web GUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <h1>Thinking Juice ChristmasPi</h1>
+        <p>Let's all gather around the ChristmasPi Tree</p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="col-md-9">
+        <!-- Displays live webcam feed if the Motion service (apt-get install motion) is started on the Pi -->
+       <!--  <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Live webcam feed</h3>
+          </div>
+          <div class="panel-body">
+            <p>Watch the office and Christmas tree in real time.</p>
+            <img class="webcam" src="http://christmaspi:8081/">
+            </div>
+          </div> -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Flash our light</h3>
+          </div>
+          <div class="panel-body">
+            <p>If you send a tweet to <a class="twitter popup" href="http://twitter.com/home?status=@weareemerge">@weareemerge</a>, <a class="twitter popup" href="http://twitter.com/home?status=@thinkingjuice">@thinkingjuice</a> or <a class="twitter popup" href="http://twitter.com/home?status=@tjxmaspi">@tjxmaspi</a> the light on our tree will flash five times and the tweet will be displayed a screen in our offices. If your tweet contains a photo, that will be shown too.</p>
+            <p>Your tweet can also control how many times the light flashes, from once to five times.</p>
+            <p>Press the buttons below to try for yourself:</p>
+            <p>
+              <a class="btn btn-default twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23one">one flash</a>
+              <a class="btn btn-default twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23two">two flashes</a>
+              <a class="btn btn-default twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23three">three flashes</a>
+              <a class="btn btn-default twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23four">four flashes</a>
+              <a class="btn btn-default twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23five">five flashes</a>
+            </p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Change the colour of the light</h3>
+          </div>
+          <div class="panel-body">
+            <p>The light is magic and can change colour with your help.</p>
+            <p>Press the buttons below to try for yourself:</p>
+            <p>
+              <a class="btn btn-default twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23white">white</a>
+              <a class="btn btn-danger twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23red">red</a>
+              <a class="btn btn-success twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23green">green</a>
+              <a class="btn btn-primary twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23blue">blue</a>
+              <a class="btn btn-yellow twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23yellow">yellow</a>
+              <a class="btn btn-pink twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23pink">pink</a>
+              <a class="btn btn-info twitter popup" role="button" href="http://twitter.com/home?status=@tjxmaspi %23cyan">cyan</a>
+            </p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Play some amazing Christmas music</h3>
+          </div>
+          <div class="panel-body">
+            <p>'Tis the season to listen to some great festive tunes, you can control which ones we listen to in the office.</p>
+            <p>Press the button below to try for yourself:</p>
+            <p>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                  Pick a good'un
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a class="twitter popup" role="menuitem" tabindex="-1" href="http://twitter.com/home?status=@tjxmaspi %23jinglebells">Jingle Bells</a></li>
+                  <li role="presentation"><a class="twitter popup" role="menuitem" tabindex="-1" href="http://twitter.com/home?status=@tjxmaspi %23wewishyouamerrychristmas">We Wish You A Merry Christmas</a></li>
+                  <li role="presentation"><a class="twitter popup" role="menuitem" tabindex="-1" href="http://twitter.com/home?status=@tjxmaspi %23littledonkey">Little Donkey</a></li>
+                  <li role="presentation"><a class="twitter popup" role="menuitem" tabindex="-1" href="http://twitter.com/home?status=@tjxmaspi %23ohchristmastree">Oh Christmas Tree</a></li>
+                  <li role="presentation"><a class="twitter popup" role="menuitem" tabindex="-1" href="http://twitter.com/home?status=@tjxmaspi %23deckthehalls">Deck The Halls</a></li>
+                  <li role="presentation"><a class="twitter popup" role="menuitem" tabindex="-1" href="http://twitter.com/home?status=@tjxmaspi %23drivinghomeforchristmas">Driving Home For Chirstmas</a></li>
+                </ul>
+              </div>
+            </p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Show us your favourite video or song</h3>
+          </div>
+          <div class="panel-body">
+            <p>As well as tweeting photos, you can also share your favourite vidoes or songs with us via YouTube, Vimeo or SoundCloud.</p>
+            <p>Enter in a YouTube, Vimeo or SoundCloud link below and hit the play button below to try for yourself:</p>
+            <div class="col-md-9">
+              <div class="input-group">
+                <input type="text" class="form-control" id="mediaLink">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" onclick="getMediaLink();">Play</button>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function getMediaLink(){
+        var left   = ($(window).width()  - 575)  / 2;
+        var top    = ($(window).height() - 400) / 2;
+        var str = document.getElementById('mediaLink').value;
+        var youTube = str.match(/youtu/gi)
+        if ( youTube != null ) {
+          var youTubeUrl = str;
+          var regex = /=([a-zA-Z0-9_-]{1,11})/gi;
+          var matches = youTubeUrl.match(regex);
+          var youTubeId = matches[0].replace("=", "");
+          window.open('http://twitter.com/home?status=@tjxmaspi %23yt-'+youTubeId, "", 'width=575, height=400, top='+top+', left='+left);
+          // alert(youTubeId);
+        }
+        var vimeo = str.match(/vimeo/gi)
+        if ( vimeo != null ) {
+          var vimeoUrl = str;
+          var regex = /\/([0-9]{1,11})/gi;
+          var matches = vimeoUrl.match(regex);
+          var vimeoId = matches[0].replace("/", "");
+          window.open('http://twitter.com/home?status=@tjxmaspi %23vm-'+vimeoId, "", 'width=575, height=400, top='+top+', left='+left);
+          // alert(vimeoId);
+        }
+        var soundCloud = str.match(/soundcloud/gi)
+        if ( soundCloud != null ) {
+          var trackUrl = str;
+          var Client_ID = '304d00ec53f10dad38de842f0e50b34f';
+          $.get(
+              'http://api.soundcloud.com/resolve.json?url=' + trackUrl + '&client_id=' + Client_ID, 
+              function (result) {
+                window.open('http://twitter.com/home?status=@tjxmaspi %23sc-'+result.id, "", 'width=575, height=400, top='+top+', left='+left);
+                // alert(result.id);
+              }
+          );
+        }
+        if ( youTube == null && vimeo == null && soundCloud == null) {
+          alert("Please enter a YouTube, Vimeo or SoundCloud link");
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(document).ready(function() {
+          $('.popup').click(function(event) {
+            var width  = 575,
+                height = 400,
+                left   = ($(window).width()  - width)  / 2,
+                top    = ($(window).height() - height) / 2,
+                url    = this.href,
+                opts   = 'status=1' +
+                         ',width='  + width  +
+                         ',height=' + height +
+                         ',top='    + top    +
+                         ',left='   + left;
+            
+            window.open(url, 'twitter', opts);
+         
+            return false;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
